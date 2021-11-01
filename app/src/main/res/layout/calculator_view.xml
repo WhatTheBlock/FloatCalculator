@@ -36,7 +36,7 @@
         android:layout_height="55dp"
         android:text="@string/btn_7"
         app:layout_constraintStart_toStartOf="@+id/result"
-        app:layout_constraintTop_toBottomOf="@+id/btnClear" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
 
     <Button
         android:id="@+id/btn8"
@@ -57,12 +57,12 @@
         app:layout_constraintTop_toTopOf="@+id/btn8" />
 
     <Button
-        android:id="@+id/btnClear"
+        android:id="@+id/btnDelete"
         android:layout_width="50dp"
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
-        android:text="@string/btn_clear"
-        app:layout_constraintStart_toEndOf="@+id/btnClose"
+        android:text="@string/btn_delete"
+        app:layout_constraintStart_toEndOf="@+id/btnClear"
         app:layout_constraintTop_toBottomOf="@+id/divider" />
 
     <Button
@@ -71,8 +71,8 @@
         android:layout_height="55dp"
         android:layout_marginStart="8dp"
         android:text="@string/btn_division"
-        app:layout_constraintStart_toEndOf="@+id/btnClear"
-        app:layout_constraintTop_toTopOf="@+id/btnClear" />
+        app:layout_constraintStart_toEndOf="@+id/btnDelete"
+        app:layout_constraintTop_toTopOf="@+id/btnDelete" />
 
     <Button
         android:id="@+id/btnTimes"
@@ -180,10 +180,10 @@
         app:layout_constraintTop_toTopOf="@+id/btn3" />
 
     <Button
-        android:id="@+id/btnClose"
+        android:id="@+id/btnClear"
         android:layout_width="50dp"
         android:layout_height="55dp"
-        android:text="@string/btn_close"
+        android:text="@string/btn_clear"
         app:layout_constraintStart_toStartOf="@+id/result"
-        app:layout_constraintTop_toTopOf="@+id/btnClear" />
+        app:layout_constraintTop_toTopOf="@+id/btnDelete" />
 </androidx.constraintlayout.widget.ConstraintLayout>
