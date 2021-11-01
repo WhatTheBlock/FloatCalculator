@@ -15,7 +15,7 @@ import tw.wtb.floatcalculator.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var mCalculatorIcon: XToast<XToast<*>>
+    private lateinit var mFloatIcon: XToast<XToast<*>>
     private lateinit var mCalculatorView: XToast<XToast<*>>
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,12 +24,12 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        mCalculatorIcon = XToast<XToast<*>>(application).apply {
-            setContentView(R.layout.calculator_icon)
+        mFloatIcon = XToast<XToast<*>>(application).apply {
+            setContentView(R.layout.float_icon)
             setGravity(Gravity.END)
             setYOffset(-500)
             setDraggable(SpringDraggable())
-            setImageDrawable(android.R.id.icon, ResourcesCompat.getDrawable(resources, R.mipmap.ic_launcher, null))
+            setImageDrawable(android.R.id.icon, ResourcesCompat.getDrawable(resources, R.drawable.calculator_icon, null))
             setOnClickListener(android.R.id.icon) { _, viewIcon ->
                 if(!mCalculatorView.isShow) {
                     mCalculatorView.showAsDropDown(viewIcon, Gravity.BOTTOM)
@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
                 .permission(Permission.SYSTEM_ALERT_WINDOW)
                 .request (object : OnPermissionCallback {
                     override fun onGranted(permissions: List<String>, all: Boolean) {
-                        mCalculatorIcon.show()
+                        mFloatIcon.show()
                     }
                     override fun onDenied(permissions: List<String>, never: Boolean) {
                         if(ToastUtils.isInit())
