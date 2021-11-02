@@ -3,35 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="232dp"
-    android:layout_height="335dp"
+    android:layout_height="337dp"
     android:background="@drawable/bg_calculator_view_rounded_corner"
-    android:backgroundTint="#9DF385">
-
-    <EditText
-        android:id="@+id/result"
-        android:layout_width="216dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="8dp"
-        android:backgroundTint="#77E9CE"
-        android:ems="10"
-        android:inputType="numberSigned|number"
-        android:minHeight="48dp"
-        android:text="@string/et_clear"
-        android:textAlignment="textEnd"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="Autofill,LabelFor,DuplicateSpeakableTextCheck" />
+    android:backgroundTint="@color/calculator_view_bg_color">
 
     <View
         android:id="@+id/divider"
         android:layout_width="0dp"
         android:layout_height="1dp"
+        android:layout_marginTop="60dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/result" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn7"
@@ -41,7 +25,7 @@
         android:background="@drawable/bg_calculator_btn_rounded_corner"
         android:text="@string/btn_7"
         android:textSize="@dimen/btn_calculator_view_text_size"
-        app:layout_constraintStart_toStartOf="@+id/result"
+        app:layout_constraintStart_toStartOf="@+id/btnClear"
         app:layout_constraintTop_toBottomOf="@+id/btnDelete"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -244,7 +228,21 @@
         android:background="@drawable/bg_calculator_btn_fn_rounded_corner"
         android:text="@string/btn_clear"
         android:textSize="@dimen/btn_calculator_view_text_size"
-        app:layout_constraintStart_toStartOf="@+id/result"
+        app:layout_constraintStart_toStartOf="@+id/tvResult"
         app:layout_constraintTop_toBottomOf="@+id/divider"
         tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="right|center_vertical"
+        android:text="@string/tv_clear"
+        android:textColor="@color/black"
+        android:textSize="44sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,7 +3,7 @@ package tw.wtb.floatcalculator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
-import android.widget.EditText
+import android.widget.TextView
 import androidx.core.content.res.ResourcesCompat
 import com.hjq.permissions.OnPermissionCallback
 import com.hjq.permissions.Permission
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             setContentView(R.layout.calculator_view)
             setDraggable(SpringDraggable())
             setOnClickListener(R.id.btnClear) { toastCalc, _ ->
-                toastCalc.findViewById<EditText>(R.id.result).setText("0")
+                toastCalc.findViewById<TextView>(R.id.tvResult).text = "0"
             }
         }
 
