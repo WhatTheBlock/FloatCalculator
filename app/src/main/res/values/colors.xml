@@ -7,5 +7,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
     <color name="calculator_view_bg_color">#FF9DF385</color>
+    <color name="calculator_view_btn_color">#FF48DB44</color>
+    <color name="calculator_view_btn_fn_color">#FF77e9ce</color>
+    <color name="calculator_view_btn_op_color">#FFE6EE9C</color>
 </resources>

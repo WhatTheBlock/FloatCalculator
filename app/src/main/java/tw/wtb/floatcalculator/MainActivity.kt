@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
 
             // 清除
             setOnClickListener(R.id.btnClear) { _, _ ->
-                etResult.setText(R.string.et_clear)
+                etResult.setText(R.string.btn_0)
                 mLastNumeric = false
                 mStateError = false
                 mLastDot = false
@@ -97,7 +97,7 @@ class MainActivity : AppCompatActivity() {
             */
             setOnClickListener(R.id.btnDelete) { _, _ ->
                 if(etResult.text.length == 1) {
-                    etResult.setText(R.string.et_clear)
+                    etResult.setText(R.string.btn_0)
                     mLastNumeric = false
                     mStateError = false
                     mLastDot = false

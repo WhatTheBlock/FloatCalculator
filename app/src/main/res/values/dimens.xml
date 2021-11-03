@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="btn_calculator_view_text_size">18sp</dimen>
+    <dimen name="btn_calculator_view_text_size">22sp</dimen>
+    <dimen name="btn_calculator_view">48dp</dimen>
 </resources>

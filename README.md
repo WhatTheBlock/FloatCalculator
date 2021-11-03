@@ -1,3 +1,3 @@
 # FloatCalculator
 
-![preview.gif](/preview.gif)
+![preview.png](/preview.png)

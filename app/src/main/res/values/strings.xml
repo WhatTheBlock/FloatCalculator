@@ -19,5 +19,4 @@
     <string name="btn_times">*</string>
     <string name="btn_equals">=</string>
     <string name="btn_delete">←</string>
-    <string name="et_clear">0</string>
 </resources>
